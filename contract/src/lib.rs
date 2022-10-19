@@ -72,7 +72,6 @@ mod tests {
     use super::*;
     use near_sdk::MockedBlockchain;
     use near_sdk::{testing_env, VMContext};
-
     // mock the context for testing, notice "signer_account_id" that was accessed above from env::
     fn get_context(input: Vec<u8>, is_view: bool) -> VMContext {
         VMContext {
